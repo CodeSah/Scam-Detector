@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scam Detection Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scam Detection Agent</h1>
+
+        <!-- Text Input Form -->
+        <div>
+            <h2>Analyze Text</h2>
+            <textarea id="text-input" placeholder="Enter text for analysis..."></textarea>
+            <button onclick="analyzeText()">Analyze Text</button>
+        </div>
+
+        <!-- URL Input Form -->
+        <div>
+            <h2>Check URL</h2>
+            <input type="text" id="url-input" placeholder="Enter URL to check...">
+            <button onclick="checkUrl()">Check URL</button>
+        </div>
+
+        <!-- Audio Upload Form -->
+        <div>
+            <h2>Analyze Audio</h2>
+            <input type="file" id="audio-input" accept="audio/*">
+            <button onclick="analyzeAudio()">Analyze Audio</button>
+        </div>
+
+        <!-- Result Section -->
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
